@@ -22,8 +22,8 @@ public class prime {
             }
             while(count==2)
             {
-                System.out.println(i);
-                 break;
+                System.out.print(i +" ");
+               break;
             }
         }
     }
