@@ -3,25 +3,28 @@ public class functionoverload {
     
     void show()
     {
-    System.out.println("the sum of given nos is:");
+    System.out.println("hello world:");
     }
-    void display()
+    void show(int x)
     {
-     int sum;
-     sum=a+b;
-     System.out.println(sum);
+        a=x;
+     System.out.println(a);
+     System.out.println("the sum of given nos is:");
     }
-    void dibya()
+    void show(int x,int y)
     {
-        System.out.println("program run successful");
+        a=x;
+        b=x;
+        int sum=a+b;
+        System.out.println(sum);
     }
     class functionoverload1
     {
         public static void main(String[] args) {
             functionoverload ob=new functionoverload();
             ob.show();
-            ob.display();
-            ob.dibya();
+            ob.show(20);
+            ob.show(100,200);
         }
     }
 }
